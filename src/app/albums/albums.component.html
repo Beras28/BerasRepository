@@ -1,0 +1,11 @@
+
+<div>
+    <h3 style="margin-left:2%;"> Productos en el carrito:{{count}} </h3>
+
+<ul *ngFor="let item of AlbumnsCopy">
+
+<app-album-card [AlbumItem]="item"> </app-album-card>
+
+</ul>    
+
+</div>

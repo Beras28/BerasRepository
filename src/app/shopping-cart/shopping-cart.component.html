@@ -1,0 +1,9 @@
+
+<div>
+<h3 style="margin-left: 2%;">En el carrito : {{shoppingCartObj.length}}</h3>
+
+
+<ul *ngFor="let item of shoppingCartObj" >
+    <span>  {{item.ItemId}} - {{item.ItemTitle}}  <button [ngStyle]="{'box-shadow': 'rgba(0, 0, 0, 0.16) 4px 1px 4px','background':'red','color':'white' }" (click)="DeleteItem(item.ItemId)" > Eliminar </button> </span>
+</ul>
+</div>    
